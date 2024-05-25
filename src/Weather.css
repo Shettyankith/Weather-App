@@ -1,0 +1,28 @@
+:root{
+    margin: 0;
+    background-image: url("./assets/bc.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width:900px){
+    :root{
+        min-height: max-content;
+       }
+}
+
+
+.weather{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
