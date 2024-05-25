@@ -13,7 +13,6 @@ export default function Search({ updateWeather }) {
         try {
             let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
             let weather = await response.json();
-            console.log(weather);
             let sunriseDate = weather.sys.sunrise;
             let sunsetDate = weather.sys.sunset;
 
@@ -37,7 +36,6 @@ export default function Search({ updateWeather }) {
                 sunset: formattedSunset.time,
                 date: formattedSunrise.date
             };
-            console.log(data);
             return data;
         } catch (e) {
             throw e;
